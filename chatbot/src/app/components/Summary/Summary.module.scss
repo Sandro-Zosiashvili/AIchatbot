@@ -1,0 +1,110 @@
+.container {
+
+    display: flex;
+    gap: 2px;
+    height: 250px;
+    width: 461px;
+    overflow: visible;
+    position: relative;
+
+
+
+}
+
+.insideBox {
+    width: 230px;
+    height: 250px;
+    overflow: visible;
+    position: relative;
+}
+
+.secondBox {
+    width: 230px;
+    height: 208px;
+    // background-color: black;
+    // border-top: solid 2px red;
+    // border-right: solid 2px red;
+    // position: relative;
+    // background: linear-gradient(to right, #F0B71F, #E03609);
+    // border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #F0B71F, #E03609) 1;
+    border-left: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+}
+
+.summaryText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: -14px
+}
+
+.SummaryDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.summaryInsideText {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.ball {
+    background-color: #F0B71F;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.secondBall {
+    width: 57px;
+    height: 57px;
+    background-color: #F0B71F4D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.thirdBall {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background-color: #F0B71F78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -45.5px;
+    // margin-bottom: -10px;
+    position: relative;
+    top: 40px;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.ball:hover,
+.secondBall:hover,
+.thirdBall:hover {
+    transform: scale(1.06);
+}
+
+.text {
+    width: 240px;
+    height: 50px;
+    color: #DDDDDD;
+    margin-top: 4px;
+    margin-left: 17px;
+}
