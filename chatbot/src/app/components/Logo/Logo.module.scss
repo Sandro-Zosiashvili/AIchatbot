@@ -1,9 +1,14 @@
 .container {
-    background: linear-gradient(10deg, #F0B71F, #E03609);
+    display: flex;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #F0B71F, #E03609);
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    
-    font-size: 24px;
-    font-weight: bold;
+
 }
