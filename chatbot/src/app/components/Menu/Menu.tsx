@@ -15,7 +15,7 @@ const Menu = () => {
         <div className={styles.container}>
             <Logo />
             <Menuitem />
-            <Button />
+            <Button title={'Get started free'} />
 
         </div>
 

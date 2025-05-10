@@ -1,9 +1,12 @@
 
 import styles from './Button.module.scss'
 
+type Props = {
+    title: String
 
+}
 
-const Button  = () => {
+const Button  = ( props : Props) => {
 
 
 
@@ -11,7 +14,7 @@ const Button  = () => {
 
         <button className={styles.container}>
             <div>
-                Get started free
+                {props.title}
             </div>
         </button>
 

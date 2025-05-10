@@ -1,23 +1,20 @@
 .container {
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
+    font-weight: 500;
     width: 450px;
 }
 
 .menuItem {
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #edecec;
+    color: #fff;
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 17px;
 }
 
 .menuItem:hover {
-
-    color: #fff;
-    
     // background-color: #007acc;
     // background: linear-gradient(to right, #F0B71F, #E03609);
     transform: translateY(-2px);
