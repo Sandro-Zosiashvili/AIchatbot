@@ -10,7 +10,7 @@ export default function Home() {
     <div className={styles.container}>
 
 
-      <Summary />
+      {/* <Summary /> */}
 
 
 
