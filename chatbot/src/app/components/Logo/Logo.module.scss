@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    
+
 }
 
 .logo {
@@ -10,5 +10,6 @@
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
 
 }

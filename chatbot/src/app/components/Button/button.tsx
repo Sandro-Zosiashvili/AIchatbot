@@ -1,9 +1,9 @@
 
-import styles from './button.module.scss'
+import styles from './Button.module.scss'
 
 
 
-const button  = () => {
+const Button  = () => {
 
 
 
@@ -19,4 +19,4 @@ const button  = () => {
     )
 }
 
-export default button
+export default Button
