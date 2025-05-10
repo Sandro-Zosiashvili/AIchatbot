@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.header {
+    font-size: 200px;
+    font-weight: 700;
+
+    background: -webkit-linear-gradient(45deg, #E03609, #F0B71F);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
