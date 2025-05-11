@@ -1,16 +1,20 @@
+'use client'
 import styles from './Logo.module.scss'
+import { useRouter } from 'next/navigation';
+
 
 
 
 
 const Logo = () => {
+    const router = useRouter()
 
 
     return (
 
         <div className={styles.container}>
-            <div className={styles.logo}>
-                Cyber.AI
+            <div onClick={() => router.push('/')} className={styles.logo}>
+                Talkify.AI
             </div>
         </div>
     )

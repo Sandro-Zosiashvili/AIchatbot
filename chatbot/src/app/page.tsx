@@ -8,11 +8,9 @@ import Summary from "./components/Summary/Summary";
 export default function Home() {
   return (
     <div className={styles.container}>
-
+      {/* <Menu /> */}
 
       {/* <Summary /> */}
-
-
 
     </div>
   );

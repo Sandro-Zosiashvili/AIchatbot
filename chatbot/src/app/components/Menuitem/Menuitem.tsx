@@ -21,7 +21,7 @@ const Menuitem = () => {
     const data = [
         {
             title: 'Home',
-            path: '/home',
+            path: '/',
 
         },
         {
