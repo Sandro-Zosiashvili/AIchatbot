@@ -1,0 +1,50 @@
+.container {
+    width: 675px;
+    height: 328px;
+    padding: 34px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    margin-top: -100px;
+    gap: 44px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, #E03609, #F0B71F) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.customerInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 270px;
+    // background-color: red;
+}
+
+.customerFont {
+    font-size: 57.95px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(110deg, #F0B71F, #E03609);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.customerCustomers {
+    font-size: 28px;
+
+
+}
+
+.customerInsideDetals {
+    color: #DDDDDD;
+
+}

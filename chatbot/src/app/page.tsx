@@ -5,11 +5,11 @@ import Menu from "./components/Menu/Menu";
 import Header from "./components/Header/Header";
 import Summary from "./components/Summary/Summary";
 import Events from "./components/Events/Events";
+import Customers from "./components/Customers/Customers";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-
 
       
 
