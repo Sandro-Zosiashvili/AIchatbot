@@ -50,7 +50,53 @@ button {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  border-top: none;
+
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
+
+
+
+}
+
+.container::before {
+  content: "";
+  position: relative;
+  top: -22px;
+  /* ზუსტად padding-top-ის ქვემოთ დაჯდება */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
+}
+
+
+
+header {
+
+  width: 100%;
+  max-width: 1417px;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* border: 2px solid red; */
+  /* border-bottom: none;
+  border-top: none;  */
+  padding-left: 52px;
+  padding-right: 52px;
+
+
+  border-width: 1px;
+  /* border-style: solid; */
+  border-left: 1px solid ;
+  border-right: 1px solid ;
+    border-image-slice: 1;
+  border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
 }
 
 /* a {

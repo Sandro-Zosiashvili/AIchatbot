@@ -11,6 +11,9 @@ export default function Home() {
       {/* <Menu /> */}
 
       {/* <Summary /> */}
+      <div >
+        sdsafsad
+      </div>
 
     </div>
   );

@@ -31,13 +31,12 @@ export default function RootLayout({
         <title>My Application</title>
       </head>
       <body >
-        <header>
+        <header className="header">
           <nav>
-            {/* აქ იქნება მენიუ */}
+            <Menu />
           </nav>
         </header>
         <main className="container">
-          <Menu />
           {children}
         </main>
         <footer>
