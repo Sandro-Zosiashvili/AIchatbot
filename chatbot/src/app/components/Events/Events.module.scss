@@ -1,0 +1,33 @@
+.container {
+    width: 300px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.eventHeader {
+    font-size: 36px;
+    font-weight: 300;
+    width: 272px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.eventInformation {
+    text-align: right;
+    color: #DDDDDD;
+    text-align: right;
+    width: 260px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-top: 44px;
+}
+
+.button {
+    margin-top: 58px;
+}
+
+.eventHeader span {
+    font-weight: bold;
+}

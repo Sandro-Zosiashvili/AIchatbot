@@ -4,16 +4,14 @@ import Logo from "./components/Logo/Logo";
 import Menu from "./components/Menu/Menu";
 import Header from "./components/Header/Header";
 import Summary from "./components/Summary/Summary";
+import Events from "./components/Events/Events";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* <Menu /> */}
 
-      {/* <Summary /> */}
-      <div >
-        sdsafsad
-      </div>
+
+      
 
     </div>
   );
