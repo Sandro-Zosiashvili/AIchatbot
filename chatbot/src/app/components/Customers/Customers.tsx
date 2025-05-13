@@ -10,7 +10,7 @@ const Customers = () => {
 
         <div className={styles.container}>
             <div>
-                <Image src="./Images/customers.svg" alt="customerLogo" width={200} height={260} />
+                <Image src="./Images/comp.svg" alt="customerLogo" width={136} height={138} />
 
             </div>
             <div className={styles.customerInformation}>

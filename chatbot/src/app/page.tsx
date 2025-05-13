@@ -8,20 +8,16 @@ import Events from "./components/Events/Events";
 import Customers from "./components/Customers/Customers";
 import Experiences from "./components/Experiences/Experiences";
 import Corner from "./components/Corner/Corner";
+import Firstpage from "./components/Firstpage/Firstpage";
 
 export default function Home() {
   return (
     <div className={styles.container}>
 
-        {/* <Experiences /> */}
-    <div className={styles.test}>
-        <Corner rotate={'0deg'} />
+        <Firstpage />
 
-    </div>
 
-    {/* <div className={styles.testee}>
 
-    </div> */}
   
     </div>
 

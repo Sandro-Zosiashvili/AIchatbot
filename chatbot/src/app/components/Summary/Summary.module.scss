@@ -1,11 +1,12 @@
 .container {
 
     display: flex;
-    gap: 2px;
-    height: 250px;
-    width: 461px;
+    // gap: 2px;
+    height: 122px;
+    width: 295px;
     overflow: visible;
     position: relative;
+    
 
 
 
@@ -13,21 +14,21 @@
 
 .insideBox {
     width: 230px;
-    height: 250px;
+    height: 122px;
     overflow: visible;
     position: relative;
 }
 
 .secondBox {
     width: 230px;
-    height: 208px;
+    height: 90px;
     // background-color: black;
     // border-top: solid 2px red;
     // border-right: solid 2px red;
     // position: relative;
     // background: linear-gradient(to right, #F0B71F, #E03609);
     // border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(to right, #F0B71F, #E03609) 1;
     border-left: none;
@@ -35,6 +36,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
+
 
 }
 
@@ -62,15 +64,15 @@
 
 .ball {
     background-color: #F0B71F;
-    width: 28px;
-    height: 28px;
+    width: 16px;
+    height: 16px;
     transition: transform 0.3s ease;
     border-radius: 50%;
 }
 
 .secondBall {
-    width: 57px;
-    height: 57px;
+    width: 34px;
+    height: 34px;
     background-color: #F0B71F4D;
     border-radius: 50%;
     display: flex;
@@ -80,17 +82,17 @@
 }
 
 .thirdBall {
-    width: 87px;
-    height: 87px;
+    width: 51px;
+    height: 51px;
     border-radius: 50%;
     background-color: #F0B71F78;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -45.5px;
+    margin-right: -26.7px;
     // margin-bottom: -10px;
     position: relative;
-    top: 40px;
+    top: 25px;
     z-index: 10;
     transition: transform 0.3s ease;
 }
@@ -102,9 +104,9 @@
 }
 
 .text {
-    width: 240px;
-    height: 50px;
+    width: 200px;
+    height: 54px;
     color: #DDDDDD;
-    margin-top: 4px;
+    margin-top: 10px;
     margin-left: 17px;
 }
