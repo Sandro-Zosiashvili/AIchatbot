@@ -17,6 +17,15 @@ const Menu = () => {
             <Menuitem />
             <Button title={'Get started free'} />
 
+            <div className={styles.leftCorner}>
+            
+            </div>
+            <div className={styles.rightCorner}>
+
+            </div>
+
+            
+
         </div>
 
 

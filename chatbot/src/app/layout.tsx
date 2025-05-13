@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Menu from "./components/Menu/Menu";
+import Image from "next/image";
+import { styleText } from "util";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My Application</title>
-        
+
       </head>
       <body >
         <header className="header">
@@ -38,7 +40,11 @@ export default function RootLayout({
           </nav>
         </header>
         <main className="container">
+          {/* <div className="long"></div> */}
           {children}
+          <div className="designlogo">
+            <Image src={'../Images/designlogo.svg'} width={200} height={200} alt="designlogo" />
+          </div>
         </main>
         <footer>
           {/* აქ ფუტერი  */}

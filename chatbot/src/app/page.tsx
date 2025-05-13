@@ -6,12 +6,18 @@ import Header from "./components/Header/Header";
 import Summary from "./components/Summary/Summary";
 import Events from "./components/Events/Events";
 import Customers from "./components/Customers/Customers";
+import Experiences from "./components/Experiences/Experiences";
+import Corner from "./components/Corner/Corner";
 
 export default function Home() {
   return (
     <div className={styles.container}>
 
-      
+        {/* <Experiences /> */}
+
+
+
+        <Corner />
 
     </div>
   );
