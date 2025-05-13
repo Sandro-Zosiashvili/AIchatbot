@@ -14,11 +14,17 @@ export default function Home() {
     <div className={styles.container}>
 
         {/* <Experiences /> */}
-
-
-
-        <Corner />
+    <div className={styles.test}>
+        <Corner rotate={'0deg'} />
 
     </div>
+
+    <div className={styles.testee}>
+
+    </div>
+  
+    </div>
+
+
   );
 }

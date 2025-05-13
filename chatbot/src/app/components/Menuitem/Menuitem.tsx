@@ -29,13 +29,10 @@ const Menuitem = () => {
             path: '/aboutus',
         },
         {
-            title: 'support',
-            path: '/support',
+            title: 'Contact & Support',
+            path: '/Contact',
         },
-        {
-            title: 'contact',
-            path: '/contact',
-        },
+
     ]
 
 
@@ -44,7 +41,7 @@ const Menuitem = () => {
 
             {
                 data.map((item: Menuitem, index) => (
-                    <div onClick={ () => router.push(`${item.path}`)}  className={styles.menuItem}   key={index}>
+                    <div onClick={() => router.push(`${item.path}`)} className={styles.menuItem} key={index}>
                         {item.title}
                     </div>
                 ))

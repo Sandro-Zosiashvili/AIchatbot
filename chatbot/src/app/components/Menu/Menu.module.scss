@@ -18,58 +18,12 @@
     width: 100%;
 }
 
-.leftCorner {
+
+
+.corner {
+
     position: absolute;
-    bottom: -20px;
-    left: -52px;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    overflow: hidden;
-}
+    bottom: 5.2px;
+    left: -51.9px;
 
-.leftCorner::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    //    width: 5px;
-    //    height: 5px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 25px solid #E03609;
-    /* წითელი ფერი */
-    box-sizing: border-box;
-    transform: translate(-50%, 50%);
-}
-
-
-
-
-
-
-.rightCorner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.rightCorner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    // width: 400px;
-    // height: 400px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 80px solid #e74c3c;
-    /* წითელი ფერი */
-    box-sizing: border-box;
-    /* შებრუნება 90 გრადუსით, რათა წვეტი მიმართული იყოს ქვემოთ-მარჯვნივ */
-    transform: translate(50%, -50%) rotate(90deg);
 }
