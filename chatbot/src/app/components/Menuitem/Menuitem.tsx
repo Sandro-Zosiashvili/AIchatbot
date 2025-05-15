@@ -4,7 +4,7 @@ import styles from './Menuitem.module.scss'
 import { useRouter } from 'next/navigation';
 
 
-type Menuitem = {
+type MenuitemთType = {
     title: String;
     path: String;
     // key: String
@@ -40,7 +40,7 @@ const Menuitem = () => {
         <div className={styles.container}>
 
             {
-                data.map((item: Menuitem, index) => (
+                data.map((item: MenuitemთType, index) => (
                     <div onClick={() => router.push(`${item.path}`)} className={styles.menuItem} key={index}>
                         {item.title}
                     </div>

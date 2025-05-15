@@ -19,7 +19,13 @@ const Firstpage = () => {
                 <div className={styles.summary}>
                     <Summary />
                 </div>
-                <Image className={styles.headimage} src={'./Images/headlogo.svg'} width={552} height={415} alt='headlogo' />
+                <div>
+
+                </div >
+                <div className={styles.headimage}>
+                    <Image src={'./Images/headlogo.svg'} width={552} height={415} alt='headlogo' />
+
+                </div>
                 <div className={styles.event}>
                     <Events />
 

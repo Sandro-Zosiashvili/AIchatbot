@@ -17,8 +17,16 @@
 .logoHead {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
-// .logoo {
-//     background-color: red;
-// }
+
+.logoWrapper {
+    width: 40px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* სურვილისამებრ */
+    overflow: hidden;
+}

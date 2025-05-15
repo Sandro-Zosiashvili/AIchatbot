@@ -16,7 +16,9 @@ const Logo = () => {
 
         <div className={styles.container}>
             <div onClick={() => router.push('/')} className={styles.logoHead}>
-                {/* <Image className={styles.logoo} src={'../Images/talkilogo.svg'} width={60} height={60} alt="designlogo" /> */}
+                <div className={styles.logoWrapper}>
+                    <Image className={styles.logoo} src={'../Images/talkilogo.svg'} width={70} height={70} alt="designlogo" />
+                </div>
                 <div className={styles.logo}>
                     Talkify.AI
                 </div>

@@ -9,19 +9,18 @@ import Customers from "./components/Customers/Customers";
 import Experiences from "./components/Experiences/Experiences";
 import Corner from "./components/Corner/Corner";
 import Firstpage from "./components/Firstpage/Firstpage";
+import Secontpage from "./components/Secondpage/SecondPage";
 
 export default function Home() {
   return (
     <div className={styles.container}>
 
       <Firstpage />
-      <div className={styles.long}>
+      <div className={styles.long}></div>
 
-      </div>
+      <Secontpage />
+      <div className={styles.long}></div>
 
-      <div className={styles.toto}>
-
-      </div>
 
 
 
