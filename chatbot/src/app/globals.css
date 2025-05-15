@@ -68,16 +68,6 @@ button {
 
 }
 
-.long {
-  width: 100%;
-  height: 1px;
-  background-color: red;
-  position: relative;
-  top: 20px;
-
-}
-
-
 .container::before {
   content: "";
   position: relative;
@@ -89,6 +79,17 @@ button {
   border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
 }
 
+.long {
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  position: relative;
+  top: 20px;
+
+}
+
+
+
 
 
 header {
@@ -96,7 +97,7 @@ header {
   width: 100%;
   max-width: 1417px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 8px;
   /* border: 2px solid red; */
   /* border-bottom: none;
   border-top: none;  */

@@ -14,11 +14,18 @@ export default function Home() {
   return (
     <div className={styles.container}>
 
-        <Firstpage />
+      <Firstpage />
+      <div className={styles.long}>
+
+      </div>
+
+      <div className={styles.toto}>
+
+      </div>
 
 
 
-  
+
     </div>
 
 

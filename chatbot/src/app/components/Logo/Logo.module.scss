@@ -8,8 +8,17 @@
     font-weight: 700;
     background: -webkit-linear-gradient(45deg, #F0B71F, #E03609);
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 
 }
+
+.logoHead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+// .logoo {
+//     background-color: red;
+// }

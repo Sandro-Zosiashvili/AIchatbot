@@ -12,10 +12,20 @@
     background-color: red;
 } */
 
-/* .toto {
+.toto {
 
-    min-height: 100vh; 
-    background-color: tomato;
+    min-height: 100vh;
+    background-color: black;
 
-    
-}  */
+
+}
+
+.long {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    height: 1px;
+    background-image: linear-gradient(to right, #E03609, #F0B71F);
+}

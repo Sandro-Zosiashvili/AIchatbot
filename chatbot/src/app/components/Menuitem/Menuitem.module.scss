@@ -8,9 +8,10 @@
 .menuItem {
     cursor: pointer;
     transition: all 0.3s ease;
+    // transition: border 1 left to right;
     color: #fff;
     padding: 8px 12px;
-    border-radius: 8px;
+    // border-radius: 8px;
     font-size: 17px;
 }
 
@@ -18,7 +19,7 @@
     // background-color: #007acc;
     // background: linear-gradient(to right, #F0B71F, #E03609);
     transform: translateY(-2px);
-    border-radius: 8px;
-
+    // border-radius: 8px;
+    border-bottom: 1px solid #F0B71F;
 
 }

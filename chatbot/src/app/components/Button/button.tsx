@@ -1,18 +1,18 @@
-
 import styles from './Button.module.scss'
 
 type Props = {
-    title: String
+    title: String;
+    router?: () => void;
 
 }
 
-const Button  = ( props : Props) => {
+const Button  = (props: Props) => {
 
 
 
     return (
 
-        <button className={styles.container}>
+        <button onClick={props.router} className={styles.container}>
             <div>
                 {props.title}
             </div>
