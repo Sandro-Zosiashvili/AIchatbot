@@ -8,8 +8,8 @@ const Spheader = () => {
 
     return (
 
-        <div>
-
+        <div className={styles.container}>
+            Use <span className={styles.headerText}>AI</span> in the <span className={styles.headerText}>digital</span> and <span className={styles.headerText}>real world</span>
         </div>
 
     )

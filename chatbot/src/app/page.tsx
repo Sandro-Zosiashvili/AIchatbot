@@ -9,7 +9,7 @@ import Customers from "./components/Customers/Customers";
 import Experiences from "./components/Experiences/Experiences";
 import Corner from "./components/Corner/Corner";
 import Firstpage from "./components/Firstpage/Firstpage";
-import Secontpage from "./components/Secondpage/SecondPage";
+import Secontpage from "./components/Secondpage/Secondpage";
 
 export default function Home() {
   return (
