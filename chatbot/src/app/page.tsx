@@ -14,11 +14,15 @@ import Secontpage from "./components/Secondpage/Secondpage";
 export default function Home() {
   return (
     <div className={styles.container}>
-
       <Firstpage />
+
+
+
       <div className={styles.long}></div>
 
       <Secontpage />
+
+
       <div className={styles.long}></div>
 
 

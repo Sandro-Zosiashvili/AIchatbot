@@ -10,20 +10,16 @@
 
 .menuItem {
     cursor: pointer;
-    transition: transform 0.3s ease;
-    // transition: border 1 left to right;
+    transition: transform 0.3s ease, border-color 0.3s ease;
     color: #fff;
     padding: 5px 12px;
-    // border-radius: 8px;
     font-size: 17px;
-    // background-color: red;
+    position: relative;
+    will-change: transform;
+    border-bottom: 1.5px solid transparent;
 }
 
 .menuItem:hover {
-    // background-color: #007acc;
-    // background: linear-gradient(to right, #F0B71F, #E03609);
     transform: translateY(-3px);
-    // border-radius: 50px;
-    border-bottom: 1.5px solid white;
-
+    border-bottom-color: white;
 }
