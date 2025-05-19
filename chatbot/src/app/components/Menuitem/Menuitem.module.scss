@@ -1,25 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/orbitron');
+
 .container {
     display: flex;
+    font-family: 'Orbitron', sans-serif;
     justify-content: space-between;
     font-weight: 500;
-    width: 450px;
+    width: 480px;
 }
 
 .menuItem {
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     // transition: border 1 left to right;
     color: #fff;
-    padding: 8px 12px;
+    padding: 5px 12px;
     // border-radius: 8px;
     font-size: 17px;
+    // background-color: red;
 }
 
 .menuItem:hover {
     // background-color: #007acc;
     // background: linear-gradient(to right, #F0B71F, #E03609);
-    transform: translateY(-2px);
-    // border-radius: 8px;
-    border-bottom: 1px solid #F0B71F;
+    transform: translateY(-3px);
+    // border-radius: 50px;
+    border-bottom: 1.5px solid white;
 
 }
