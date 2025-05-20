@@ -1,0 +1,51 @@
+.container {
+    width: 600px;
+    height: 263px;
+    padding: 30px;
+    backdrop-filter: blur(11px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, #E03609, #F0B71F) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.customerInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 140px;
+}
+
+.customerFont {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.customerCustomers {
+    font-size: 20px;
+    margin-top: 10px;
+
+
+}
+
+.customerInsideDetals {
+    color: #DDDDDD;
+    line-height: 25px;
+    font-size: 21px;
+    /* ან მაგალითად 24px */
+    width: 285px;
+
+}

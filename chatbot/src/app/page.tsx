@@ -15,11 +15,12 @@ import Thirdpage from "./components/Thirdpage/Thirdpage";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Thirdpage />
       <Firstpage />
       <div className={styles.long}></div>
       <Secontpage />
+      <Thirdpage />
       <div className={styles.long}></div>
+
     </div>
 
 
