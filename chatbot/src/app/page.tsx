@@ -10,25 +10,16 @@ import Experiences from "./components/Experiences/Experiences";
 import Corner from "./components/Corner/Corner";
 import Firstpage from "./components/Firstpage/Firstpage";
 import Secontpage from "./components/Secondpage/Secondpage";
+import Thirdpage from "./components/Thirdpage/Thirdpage";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Thirdpage />
       <Firstpage />
-
-
-
       <div className={styles.long}></div>
-
       <Secontpage />
-
-
       <div className={styles.long}></div>
-
-
-
-
-
     </div>
 
 
