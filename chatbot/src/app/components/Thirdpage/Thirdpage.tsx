@@ -11,8 +11,8 @@ const Thirdpage = () => {
 
     return (
         <div className={styles.container}>
-            
-            <Theader />
+
+            {/* <Theader /> */}
 
         </div>
 
