@@ -16,12 +16,12 @@ import Fourthpage from "./components/Fourthpage/Fourthpage";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Fourthpage />
       <Firstpage />
       <div className={styles.long}></div>
       <Secontpage />
       <Thirdpage />
       <div className={styles.long}></div>
+      <Fourthpage />
 
     </div>
 
