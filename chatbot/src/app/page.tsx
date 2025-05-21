@@ -22,7 +22,6 @@ export default function Home() {
       <Thirdpage />
       <div className={styles.long}></div>
       <Fourthpage />
-
     </div>
 
 

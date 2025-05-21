@@ -39,7 +39,7 @@ export default function RootLayout({
           </nav>
         </header>
         <main className="container">
-          {/* <div className="long"></div> */}
+
           {children}
           <div className="designlogo">
             <Image src={'../Images/designlogo.svg'} width={200} height={200} alt="designlogo" />
