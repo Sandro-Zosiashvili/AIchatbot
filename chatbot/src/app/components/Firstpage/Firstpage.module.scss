@@ -52,7 +52,7 @@
 
 .corner {
     position: absolute;
-    left: -25.5px;
+    left: -26px;
 
 }
 
@@ -64,6 +64,13 @@
 .cornerThree {
     position: absolute;
     left: -0.5px;
+    bottom: 24px;
+
+}
+
+.cornerFour {
+    position: absolute;
+    right: 25px;
     bottom: 24px;
 
 }

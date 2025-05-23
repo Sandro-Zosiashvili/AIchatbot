@@ -1,11 +1,11 @@
-
 .container {
     min-height: 100vh;
     padding: 50px 41px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: relative;
+
 }
 
 .content {
@@ -30,4 +30,15 @@
     display: flex;
     gap: 70px;
     margin-top: 80px;
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    left: -25.5px;
+}
+.cornerTwo {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

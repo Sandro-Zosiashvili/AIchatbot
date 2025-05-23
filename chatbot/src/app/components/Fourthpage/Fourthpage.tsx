@@ -1,4 +1,5 @@
 import Aivariations from '../Aivariations/Aivariations'
+import Corner from '../Corner/Corner'
 import Fpaboutai from '../Fpaboutai/Fpaboutai'
 import Fpheader from '../Fpheader/Fpheader'
 import Spcontent from '../Spcontent/Spcontent'
@@ -13,6 +14,12 @@ const Fourthpage = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.corner}>
+                <Corner rotate={'45deg'} />
+            </div>
+            <div className={styles.cornerTwo}>
+                <Corner rotate={'270deg'} color={'yellow'} />
+            </div>
             <div className={styles.containerWrapper}>
                 <div className={styles.leftSideContent}>
                     <Fpheader />
@@ -21,6 +28,12 @@ const Fourthpage = () => {
                         width='645px' />
                 </div>
                 <Fpaboutai />
+            </div>
+            <div className={styles.cornerThree}>
+                <Corner rotate={'180deg'}/>
+            </div>
+            <div className={styles.cornerFour}>
+                <Corner rotate={'90deg'}  color={'yellow'} />
             </div>
 
         </div>

@@ -1,4 +1,5 @@
 
+import Corner from '../Corner/Corner'
 import Spcontent from '../Spcontent/Spcontent'
 import Thcover from '../Thcover/Thcover'
 import Theader from '../Theader/Theader'
@@ -29,7 +30,12 @@ const Thirdpage = () => {
 
             </div>
 
-            {/* <Theader /> */}
+            <div className={styles.corner}>
+                <Corner rotate={'180deg'} />
+            </div>
+            <div className={styles.cornerTwo}>
+                <Corner rotate={'90deg'} color={'yellow'}/>
+            </div>
 
         </div>
 

@@ -1,4 +1,5 @@
 
+import Corner from '../Corner/Corner'
 import Spcontent from '../Spcontent/Spcontent'
 import Spcount from '../Spcount/Spcount'
 import Spcover from '../Spcover/Spcover'
@@ -12,10 +13,16 @@ const Secontpage = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.corner}>
+                <Corner rotate={'45deg'} />
+            </div>
+            <div className={styles.cornerTwo}>
+                <Corner rotate={'270deg'}  color={'yellow'}/>
+            </div>
             <div className={styles.content}>
                 <Spheader />
                 <Spcontent content={'Let us save you time, money and energy in both the real and digital worlds. Contact us now.'}
-                    fontSize={'32px'}/>
+                    fontSize={'32px'} />
                 <div className={styles.countContent}>
                     <Spcount count={"89,2K"} title={"Discover the Future"} />
                     <Spcount count={"7001"} title={"Stories and Lore"} />

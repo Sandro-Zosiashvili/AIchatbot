@@ -14,7 +14,12 @@ import Thirdpage from "./components/Thirdpage/Thirdpage";
 import Fourthpage from "./components/Fourthpage/Fourthpage";
 import Fifthpage from "./components/Fifthpage/Fifthpage";
 
+
+
 export default function Home() {
+
+
+  
   return (
     <div className={styles.container}>
       <Firstpage />

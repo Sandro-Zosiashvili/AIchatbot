@@ -21,7 +21,7 @@ const Menu = () => {
             <Menuitem />
             <Button router={() => router.push('/aboutus')} title={'Join us now'} />
             <div className={styles.corner}>
-                <Corner rotate={"180deg"}  />
+                <Corner rotate={"180deg"} />
             </div>
             <div className={styles.cornerTwo}>
                 <Corner rotate={"90deg"}  color={'yellow'}/>

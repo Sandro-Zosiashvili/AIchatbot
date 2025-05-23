@@ -1,16 +1,16 @@
 .container {
     color: white;
 }
+
 .long {
     position: relative;
     height: 1px;
-    background-image: linear-gradient(to right, #E03609, #F0B71F);
-    z-index: 9999;
-
-    /* მთელ viewport-ზე გაწოლა */
+    background: linear-gradient(to right, #E03609, #F0B71F);
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
-
-    /* box-sizing და overflow დამუშავება */
-    box-sizing: border-box;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
+
+

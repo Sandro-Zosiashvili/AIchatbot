@@ -1,4 +1,5 @@
 
+import Corner from '../Corner/Corner'
 import Fifthheader from '../Fifthheader/Fifthheader'
 import Spcontent from '../Spcontent/Spcontent'
 import Univers from '../Univers/Univers'
@@ -11,6 +12,12 @@ const Fifthpage = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.corner}>
+                <Corner rotate={'45deg'}  />
+            </div>
+            <div className={styles.cornerTwo}>
+                <Corner rotate={'270deg'} color={'yellow'}  />
+            </div>
             <div>
                 <Fifthheader />
 
@@ -24,12 +31,12 @@ const Fifthpage = () => {
                     title={'Discover the Future'}
                     content={'Explore the high-tech, low-life world where the lines between humanity '}
                 />
-                <Univers image={'/Images/mitre.svg'}
-                    title={'Discover the Future'}
+                <Univers image={'/Images/search.svg'}
+                    title={'Explore Features'}
                     content={'Explore the high-tech, low-life world where the lines between humanity '}
                 />
-                <Univers image={'/Images/mitre.svg'}
-                    title={'Discover the Future'}
+                <Univers image={'/Images/cable.svg'}
+                    title={'Stay Connected'}
                     content={'Explore the high-tech, low-life world where the lines between humanity '}
                 />
 

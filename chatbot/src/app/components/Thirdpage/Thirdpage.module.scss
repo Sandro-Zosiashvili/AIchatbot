@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 120px;
+    position: relative;
 }
 
 
@@ -17,4 +18,18 @@
 
 .joinComponent {
     margin-top: 20px;
+}
+
+.corner {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+
+}
+
+.cornerTwo {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+
 }
