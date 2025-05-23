@@ -2,6 +2,7 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    position: relative;
     padding-bottom: 111px;
 }
 
@@ -47,4 +48,22 @@
     align-items: flex-start;
     gap: 287px;
     margin-top: -45px;
+}
+
+.corner {
+    position: absolute;
+    left: -25.5px;
+
+}
+
+.cornerTwo {
+    position: absolute;
+    right: -1px;
+}
+
+.cornerThree {
+    position: absolute;
+    left: -0.5px;
+    bottom: 24px;
+
 }

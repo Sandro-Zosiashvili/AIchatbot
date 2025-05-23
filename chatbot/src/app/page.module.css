@@ -3,9 +3,14 @@
 }
 .long {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
     height: 1px;
     background-image: linear-gradient(to right, #E03609, #F0B71F);
+    z-index: 9999;
+
+    /* მთელ viewport-ზე გაწოლა */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
+    /* box-sizing და overflow დამუშავება */
+    box-sizing: border-box;
 }

@@ -58,6 +58,7 @@ button {
   border-style: solid;
   border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
 }
+
 header {
 
   width: 100%;
@@ -75,10 +76,10 @@ header {
   border-image: linear-gradient(to right, #E03609, #F0B71F) 1;
 }
 
- a {
+a {
   color: inherit;
   text-decoration: none;
-} 
+}
 
 /* @media (prefers-color-scheme: dark) {
   html {

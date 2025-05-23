@@ -12,6 +12,7 @@ import Firstpage from "./components/Firstpage/Firstpage";
 import Secontpage from "./components/Secondpage/Secondpage";
 import Thirdpage from "./components/Thirdpage/Thirdpage";
 import Fourthpage from "./components/Fourthpage/Fourthpage";
+import Fifthpage from "./components/Fifthpage/Fifthpage";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       <Thirdpage />
       <div className={styles.long}></div>
       <Fourthpage />
+      <div className={styles.long}></div>
+      <Fifthpage />
+      <div className={styles.long}></div>
     </div>
 
 

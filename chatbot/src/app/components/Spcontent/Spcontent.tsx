@@ -4,6 +4,8 @@ type Props = {
     content: string;
     fontSize: string;
     width?: string;
+    textAlign?: React.CSSProperties["textAlign"];
+
 }
 
 
@@ -12,6 +14,7 @@ const Spcontent = (props: Props) => {
     const style = {
         fontSize: props.fontSize,
         maxWidth: props.width,
+        textAlign: props.textAlign,
     };
 
 

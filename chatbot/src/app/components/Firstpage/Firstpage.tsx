@@ -1,4 +1,5 @@
 
+import Corner from '../Corner/Corner'
 import Customers from '../Customers/Customers'
 import Events from '../Events/Events'
 import Experiences from '../Experiences/Experiences'
@@ -12,6 +13,12 @@ const Firstpage = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.corner}>
+                <Corner rotate={'45deg'} />
+            </div>
+            <div className={styles.cornerTwo}>
+                <Corner rotate={'270deg'} color={'yellow'}/>
+            </div>
             <div className={styles.header}>
                 <Header />
             </div>
@@ -40,9 +47,9 @@ const Firstpage = () => {
 
             </div>
 
-
-
-
+            <div className={styles.cornerThree}>
+                <Corner rotate={'180deg'} />
+            </div>
 
         </div>
     )
