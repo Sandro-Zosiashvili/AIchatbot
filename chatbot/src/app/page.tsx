@@ -13,6 +13,7 @@ import Secontpage from "./components/Secondpage/Secondpage";
 import Thirdpage from "./components/Thirdpage/Thirdpage";
 import Fourthpage from "./components/Fourthpage/Fourthpage";
 import Fifthpage from "./components/Fifthpage/Fifthpage";
+import Sixthpage from "./components/Sixthpage/Sixthpage";
 
 
 
@@ -21,7 +22,9 @@ export default function Home() {
 
   
   return (
+
     <div className={styles.container}>
+      <Sixthpage />
       <Firstpage />
       <div className={styles.long}></div>
       <Secontpage />
