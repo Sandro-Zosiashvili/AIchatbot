@@ -28,10 +28,8 @@
     background: black;
     position: relative;
     z-index: 0;
-    transition: all 3s;
+    transition: all 0.5s;
 }
-
-
 
 .container.outline::before {
     content: "";
@@ -40,16 +38,23 @@
     border-radius: 5px;
     padding: 2px;
     background: linear-gradient(to right, #E03609, #F0B71F);
-    -webkit-mask:
+    background-size: 200% 100%;
+    /* Double width for smooth transition */
+    background-position: 0% 0%;
+    /* Start position */
+    mask:
         linear-gradient(to right, #fff 0%, #fff 100%) content-box,
         linear-gradient(to right, #fff 0%, #fff 100%);
     mask-composite: exclude;
     z-index: 1;
     pointer-events: none;
+    transition: background-position 0.5s ease;
+    /* Smooth transition */
 }
 
 .container.outline:hover::before {
-    background: linear-gradient(to right, #F0B71F, #E03609);
+    background-position: 100% 0%;
+    /* Shift gradient to the right */
 }
 
 .container.outline>div {
@@ -64,5 +69,7 @@
 }
 
 .container.outline:hover>div {
-    filter: brightness(1.2);
+    transform: scale(1.02);
+    /* Example hover effect */
+    filter: brightness(1.1);
 }

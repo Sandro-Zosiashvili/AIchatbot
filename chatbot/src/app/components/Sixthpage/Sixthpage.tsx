@@ -9,7 +9,7 @@ const Sixthpage = () => {
 
     return (
         <div className={styles.container}>
-            <Button title={"Learn More"} outline={true} />
+            <Button title={"Join us now"} outline={true} />
 
         </div>
 
