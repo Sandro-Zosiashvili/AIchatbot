@@ -64,7 +64,7 @@ const aboutus = () => {
                     <Qanswers
                         number={'8'}
                         question={'How long does it take to launch a bot?'}
-                        answer={' Depending on the complexity, most bots go live in 2–5 days with full support from our team.'}
+                        answer={'Depending on the complexity, most bots go live in 2–5 days with full support from our team.'}
                         margin='50px'
                     />
                     <Qanswers
