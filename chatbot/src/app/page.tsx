@@ -16,6 +16,7 @@ import Fifthpage from "./components/Fifthpage/Fifthpage";
 import Sixthpage from "./components/Sixthpage/Sixthpage";
 import Seventhpage from "./components/Seventhpage/Seventhpage";
 import Footer from "./components/Footer/Footer";
+import Long from "./components/Long/Long";
 
 
 
@@ -27,17 +28,16 @@ export default function Home() {
 
     <div className={styles.container}>
       <Firstpage />
-      <div className={styles.long}></div>
+      <Long />
       <Secontpage />
       <Thirdpage />
-      <div className={styles.long}></div>
+      <Long />
       <Fourthpage />
-      <div className={styles.long}></div>
+      <Long />
       <Fifthpage />
-      <div className={styles.long}></div>
+      <Long />
       <Sixthpage />
       <Seventhpage />
-      <div className={styles.long}></div>
     </div>
 
 

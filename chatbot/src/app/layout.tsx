@@ -5,6 +5,7 @@ import Menu from "./components/Menu/Menu";
 import Image from "next/image";
 import { styleText } from "util";
 import Footer from "./components/Footer/Footer";
+import Long from "./components/Long/Long";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +48,7 @@ export default function RootLayout({
           </div>
         </main>
         <footer className="footer">
-
+          <Long />
           <Footer />
         </footer>
       </body>

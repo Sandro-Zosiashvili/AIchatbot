@@ -30,7 +30,7 @@ const Menuitem = () => {
         },
         {
             title: 'Contact & Support',
-            path: '/Contact',
+            path: '/contact',
         },
 
     ]
