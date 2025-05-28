@@ -29,7 +29,6 @@ const Qanswers = (props: Props) => {
                 <span className={styles.corner}>
                     <Image src={'/Images/Polygon.svg'} width={33} height={29} alt='polygon-logo' />
                 </span>
-
             </div>
             <div>
                 {props.answer}
