@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: red;
+    gap: 60px;
+    color: white;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+}
+
+.footerTolkify {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.footerHeader {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footerHeaderTolkifiy {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.smallFont {
+    color: #CBCBCB;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footearUnderContent {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.terms {
+    display: flex;
+    gap: 52px;
+    font-weight: 500;
+
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+}
+
+.footerBottom {
+    width: 812.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pointer {
+    cursor: pointer;
+}

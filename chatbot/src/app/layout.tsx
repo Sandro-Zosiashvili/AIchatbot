@@ -4,6 +4,7 @@ import "./globals.css";
 import Menu from "./components/Menu/Menu";
 import Image from "next/image";
 import { styleText } from "util";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,8 +46,9 @@ export default function RootLayout({
             <Image src={'../Images/designlogo.svg'} width={200} height={200} alt="designlogo" />
           </div>
         </main>
-        <footer>
-          {/* აქ ფუტერი  */}
+        <footer className="footer">
+
+          <Footer />
         </footer>
       </body>
     </html>
