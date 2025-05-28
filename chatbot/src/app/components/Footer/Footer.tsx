@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={styles.footerContent}>
                 <div className={styles.footerTolkify}>
                     <div className={styles.footerHeaderTolkifiy}>
-                        Tolkify Website
+                        Talkify Website
                     </div>
                     <div >
                         Explore the high-tech, low-life world where the lines
