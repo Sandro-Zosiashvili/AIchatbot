@@ -1,0 +1,150 @@
+.container {
+    min-height: 100vh;
+    min-height: 100vh;
+    padding: 50px 58px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+.aboutusHeader {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+
+
+}
+
+.different {
+    color: #F0B71F;
+
+}
+
+.inputWrapper {
+    background: linear-gradient(45deg, #F0B71F, #E03609);
+    padding: 1px;
+    border-radius: 5px;
+    // display: inline-block;
+    width: 307px;
+    height: 47px;
+}
+
+.inputMail {
+    width: 305px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1a1a;
+    /* მუქი ნაცრისფერი შავზე */
+    color: #fff;
+    padding: 0 10px;
+    // transition: background-color 0.2s ease !important;
+}
+
+.inputMail:-webkit-autofill,
+.inputMail:-webkit-autofill:hover,
+.inputMail:-webkit-autofill:focus,
+.inputMail:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1a1a1a inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.inputMail:focus {
+    outline: none;
+    background-color: #2a2a2a;
+    // box-shadow: 0 0 0 2px rgba(240, 183, 31, 0.5);
+    /* თბილი ოქროსფერი glow */
+}
+
+
+.mainInputWrapper {
+    // background-color: red;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.inputAbout {
+    width: 577px;
+    height: 201px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 12px;
+    resize: none;
+    font-family: inherit;
+    line-height: 1.5;
+    vertical-align: top;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.inputAbout:focus {
+    outline: none;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 0 2px rgba(240, 183, 31, 0.5);
+    /* თბილი ოქროსფერი glow */
+}
+
+.inputWrapperTwo {
+
+    background: linear-gradient(45deg, #F0B71F, #E03609);
+    padding: 1px;
+    border-radius: 5px;
+
+}
+
+.checkboxWrapper {
+    background: linear-gradient(45deg, #F0B71F, #E03609);
+    padding: 1px;
+    border-radius: 3px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    width: 29px;
+    height: 29px;
+    border-radius: 3px;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.checkbox:checked {
+    background-color: #1a1a1a;
+    background-image: url("/Images/pw.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.checkBoxAccept {
+
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fontAccept {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button {
+    align-self: flex-end;
+}
