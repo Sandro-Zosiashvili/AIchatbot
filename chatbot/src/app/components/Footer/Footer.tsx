@@ -89,7 +89,7 @@ const Footer = () => {
                 <div className={styles.logos}>
                     <Image className={styles.pointer} src={'./Images/instagram-logo.svg'} height={40} width={32} alt='copyright.svg' />
                     <Image className={styles.pointer} src={'./Images/facebook-logo.svg'} height={40} width={32} alt='copyright.svg' />
-                    <Image className={styles.pointer} src={'./Images/facebook-logo.svg'} height={40} width={32} alt='copyright.svg' />
+                    <Image className={styles.pointer} src={'./Images/Linked-ogo.svg'} height={40} width={32} alt='copyright.svg' />
                 </div>
             </div>
 
