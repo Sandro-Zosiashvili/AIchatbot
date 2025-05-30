@@ -6,6 +6,7 @@ import Image from "next/image";
 import { styleText } from "util";
 import Footer from "./components/Footer/Footer";
 import Long from "./components/Long/Long";
+import Aiwindow from "./components/Aiwindow/Aiwindow";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +45,7 @@ export default function RootLayout({
 
           {children}
           <div className="designlogo">
-            <Image src={'../Images/designlogo.svg'} width={200} height={200} alt="designlogo" />
+            <Aiwindow />
           </div>
         </main>
         <footer className="footer">

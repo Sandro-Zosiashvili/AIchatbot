@@ -43,8 +43,6 @@ export default function Contactus() {
                         I accept terms and conditions.
                     </div>
                 </div>
-
-
                 <div className={styles.button}>
                     <Button title={'Send'} />
                 </div>

@@ -1,0 +1,47 @@
+// .container {
+
+//     width: 700px;
+//     height: 400px;
+//     background-color: red;
+// }
+
+
+
+.designlogo {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    animation: float 2s ease-in-out infinite;
+    width: 60px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* სურვილისამებრ */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.aiWindow {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 452px;
+    height: 500px;
+    background-color: red;
+
+}
