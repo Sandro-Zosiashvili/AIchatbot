@@ -7,18 +7,18 @@ type Props = {
 
 }
 
-const Button  = (props: Props) => {
+const Button = (props: Props) => {
     const classes = [styles.container];
 
     if (props.outline) classes.push(styles.outline)
 
-    
+
 
 
 
     return (
 
-        <button onClick={props.router} className={classes.join(" ").trim()}>
+        <button type='submit' onClick={props.router} className={classes.join(" ").trim()}>
             <div>
                 {props.title}
             </div>

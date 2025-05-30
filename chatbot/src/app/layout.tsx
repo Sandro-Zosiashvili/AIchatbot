@@ -6,7 +6,9 @@ import Image from "next/image";
 import { styleText } from "util";
 import Footer from "./components/Footer/Footer";
 import Long from "./components/Long/Long";
-import Aiwindow from "./components/Aiwindow/Aiwindow";
+import Aibot from "./components/Aibot/Aibot";
+import Aimain from "./components/Aimain/Aimain";
+import ChildrenWrapper from "./components/Childrenwrapper/Childrenwrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,10 +45,10 @@ export default function RootLayout({
         </header>
         <main className="container">
 
-          {children}
-          <div className="designlogo">
-            <Aiwindow />
-          </div>
+          <ChildrenWrapper className="main-content">
+            {children}
+          </ChildrenWrapper>
+
         </main>
         <footer className="footer">
           <Long />
