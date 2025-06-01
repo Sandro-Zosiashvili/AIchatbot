@@ -9,8 +9,12 @@ const Customers = () => {
     return (
 
         <div className={styles.container}>
-            <div>
+            <div className={styles.image}>
                 <Image src="./Images/comp.svg" alt="customerLogo" width={136} height={138} />
+
+            </div>
+            <div className={styles.imageTablet}>
+                <Image src="./Images/comp.svg" alt="customerLogo" width={120} height={120} />
 
             </div>
             <div className={styles.customerInformation}>
@@ -24,8 +28,7 @@ const Customers = () => {
                     Customers
                 </div>
                 <div className={styles.customerInsideDetals}>
-                    <div>Be next who will develop thereself </div>
-                    <div>with us</div>
+                    <div>Be next who will develop thereself  with us</div>
                 </div>
 
             </div>

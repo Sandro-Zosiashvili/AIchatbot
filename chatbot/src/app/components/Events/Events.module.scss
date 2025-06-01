@@ -31,3 +31,22 @@
 .eventHeader span {
     font-weight: 400;
 }
+
+
+@media (max-width: 1100px) and (min-width: 768px) {
+
+    .container {
+        width: 200px;
+    }
+    .eventHeader {
+        font-size: 18px;
+    }
+    .eventInformation {
+        font-size: 14px;
+    }
+
+    .eventInformation {
+        width: 190px;
+    }
+
+}
