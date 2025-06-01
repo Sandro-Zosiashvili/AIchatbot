@@ -48,9 +48,9 @@ const Aimain = (props: Props) => {
                 },
                 {
                     headers: {
-                        'Authorization': `Bearer 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`,
+                        'Authorization': `Bearer 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`,
                         'Content-Type': 'application/json',
-                        'HTTP-Referer': 'https://yourapp.com/',
+                        'HTTP-Referer': 'https://tolkify.com/',
                     },
                 }
             );
