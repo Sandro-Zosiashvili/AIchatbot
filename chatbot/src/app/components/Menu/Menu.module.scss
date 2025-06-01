@@ -32,3 +32,19 @@
     bottom: 5.2px;
     right: -28px;
 }
+
+
+@media (max-width: 1100px) and (min-width: 768px) {
+    .corner {
+        display: none;
+    }
+
+    .cornerTwo {
+        display: none;
+    }
+
+    .container {
+        padding-right: 0;
+        padding-right: 0;
+    }
+}
