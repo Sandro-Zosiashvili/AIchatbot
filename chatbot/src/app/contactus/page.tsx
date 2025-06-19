@@ -18,6 +18,8 @@ export default function Contactus() {
     const {
         register,
         handleSubmit,
+        reset, // დაამატეთ reset მეთოდი
+
         formState: { errors },
     } = useForm<FormData>();
 
@@ -25,6 +27,7 @@ export default function Contactus() {
         axios.post("http://localhost:3002/contact", data)
             .then((response) => {
                 console.log(response.data);
+                reset();
             })
             .catch((error) => {
                 console.error("Error:", error.response?.data || error.message);
@@ -52,7 +55,8 @@ export default function Contactus() {
                     <input className={styles.inputMail}
                         {...register("phoneNumber", { required: true })}
                         defaultValue="+995 "
-                        type='text' placeholder='Mobile Number' />
+                        type='text'
+                        placeholder='Mobile Number' />
                     {errors.phoneNumber && <span className={styles.errorMessage}>This field is required</span>}
                 </div>
 
