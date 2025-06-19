@@ -24,6 +24,8 @@ const Aimain = (props: Props) => {
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const chatEndRef = useRef<HTMLDivElement>(null);
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
 
     useEffect(() => {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -39,6 +41,7 @@ const Aimain = (props: Props) => {
         setInput('');
         setIsLoading(true);
 
+
         try {
             const response = await axios.post(
                 'https://openrouter.ai/api/v1/chat/completions',
@@ -48,7 +51,7 @@ const Aimain = (props: Props) => {
                 },
                 {
                     headers: {
-                        'Authorization': `Bearer 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`,
+                        'Authorization': `Bearer ${apiKey}`,
                         'Content-Type': 'application/json',
                         'HTTP-Referer': 'https://tolkify.com/',
                     },
