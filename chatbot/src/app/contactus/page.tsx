@@ -31,6 +31,7 @@ export default function Contactus() {
             });
     };
 
+
     return (
         <div className={styles.container}>
             <div className={styles.aboutusHeader}>
@@ -44,32 +45,48 @@ export default function Contactus() {
                         type='email'
                         placeholder='Enter your E-mail'
                     />
-                    {errors.email && <span>This field is required</span>}
+                    {errors.email && <span className={styles.errorMessage}>This field is required</span>}
                 </div>
 
                 <div className={styles.inputWrapper}>
                     <input className={styles.inputMail}
                         {...register("phoneNumber", { required: true })}
+                        defaultValue="+995 "
                         type='text' placeholder='Mobile Number' />
+                    {errors.phoneNumber && <span className={styles.errorMessage}>This field is required</span>}
                 </div>
 
                 <div className={styles.inputWrapper}>
                     <input className={styles.inputMail}
                         {...register("company", { required: true })}
-
                         type='text' placeholder='Company' />
+                    {errors.company && <span className={styles.errorMessage}>This field is required</span>}
+
                 </div>
 
                 <div className={styles.inputWrapper}>
-                    <input className={styles.inputMail}
-                        {...register("socialMedia", { required: true })}
+                    <input
+                        className={styles.inputMail}
+                        {...register("socialMedia", {
+                            pattern: {
+                                value: /^(https?:\/\/)?([\w\-]+\.)+[\w\-]+(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$/,
+                                message: "Please enter a valid URL."
+                            }
+                        })}
+                        type='text'
+                        placeholder='Website or social media link'
+                    />
 
-                        type='text' placeholder='Web site or social media link' />
+                    {errors.socialMedia && (
+                        <span className={styles.errorMessage}>
+                            {errors.socialMedia.message}
+                        </span>
+                    )}
                 </div>
 
                 <div className={styles.inputWrapperTwo}>
                     <textarea className={styles.inputAbout}
-                        {...register("aboutProjct", { required: true })}
+                        {...register("aboutProjct")}
                         placeholder='Tell us about your project' />
                 </div>
 
@@ -82,6 +99,12 @@ export default function Contactus() {
                     <div className={styles.fontAccept}>
                         I accept terms and conditions.
                     </div>
+                    {
+                        errors.terms &&
+                        <span className={styles.termsError}>
+                            Please accept the terms and conditions.
+                        </span>
+                    }
                 </div>
                 <div className={styles.button}>
                     <Button title={'Send'} />

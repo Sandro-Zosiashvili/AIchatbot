@@ -134,7 +134,7 @@
 
 .checkBoxAccept {
 
-
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -147,4 +147,61 @@
 
 .button {
     align-self: flex-end;
+}
+
+// .errorMessage {
+
+//     color: red;
+//     font-size: 10px;
+// }
+
+// .termsError {
+//     color: red;
+//     font-size: 10px;
+//     position: absolute;
+//     left: 0;
+//     bottom: -20px;
+
+// }
+.errorMessage {
+    color: #ff6b6b;
+    /* მსუბუქი წითელი */
+    font-size: 12px;
+    margin-top: 4px;
+    animation: bounceError 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.termsError {
+    color: #ff6b6b;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    animation: bounceError 0.4s ease-in-out;
+}
+
+/* Bounce + Fade */
+@keyframes bounceError {
+    0% {
+        opacity: 0;
+        transform: translateY(-3px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    75% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
