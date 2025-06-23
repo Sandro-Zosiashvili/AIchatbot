@@ -18,7 +18,7 @@ export default function Contactus() {
     const {
         register,
         handleSubmit,
-        reset, // დაამატეთ reset მეთოდი
+        reset, 
 
         formState: { errors },
     } = useForm<FormData>();
