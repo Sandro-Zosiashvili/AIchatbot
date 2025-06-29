@@ -1,10 +1,10 @@
 'use client'
 import styles from './Aimain.module.scss'
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
+import {useEffect, useRef, useState} from 'react'
 import axios from 'axios'
 
-import { Aiprompt } from '@/app/Aiprompt'
+import {Aiprompt} from '@/app/Aiprompt'
 
 
 interface Message {
@@ -19,7 +19,7 @@ interface Props {
 const Aimain = (props: Props) => {
 
     const [messages, setMessages] = useState<Message[]>([
-        { role: "system", content: Aiprompt }
+        {role: "system", content: Aiprompt}
     ]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -28,13 +28,13 @@ const Aimain = (props: Props) => {
 
 
     useEffect(() => {
-        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+        chatEndRef.current?.scrollIntoView({behavior: 'smooth'});
     }, [messages]);
 
     const sendMessage = async () => {
         if (!input.trim() || isLoading) return;
 
-        const userMessage: Message = { role: 'user', content: input };
+        const userMessage: Message = {role: 'user', content: input};
         const newMessages = [...messages, userMessage];
 
         setMessages(newMessages);
@@ -44,7 +44,7 @@ const Aimain = (props: Props) => {
 
         try {
             const response = await axios.post(
-                'https://openrouter.ai/api/v1/chat/completions',
+                'https://openrouter.ai/api/chat/completions',
                 {
                     model: 'openai/gpt-3.5-turbo',
                     messages: newMessages,
@@ -81,11 +81,11 @@ const Aimain = (props: Props) => {
                     <div className={styles.headerContent}>
                         <div>New conversation</div>
                         <div>
-                            <Image src={'./Images/Vector.svg'} height={19} width={15} alt='x-logo-close' />
+                            <Image src={'./Images/Vector.svg'} height={19} width={15} alt='x-logo-close'/>
                         </div>
                     </div>
                     <div onClick={props.onClick} className={styles.pointer}>
-                        <Image src={'./Images/x.svg'} height={25} width={25} alt='x-logo-close' />
+                        <Image src={'./Images/x.svg'} height={25} width={25} alt='x-logo-close'/>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ const Aimain = (props: Props) => {
                             <div>{m.content}</div>
                         </div>
                     ))}
-                    <div ref={chatEndRef} />
+                    <div ref={chatEndRef}/>
                 </div>
 
                 <div className={styles.inputWrapper}>
