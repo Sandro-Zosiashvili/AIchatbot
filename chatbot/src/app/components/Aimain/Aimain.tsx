@@ -32,6 +32,7 @@ const Aimain = (props: Props) => {
     }, [messages]);
 
     const sendMessage = async () => {
+
         if (!input.trim() || isLoading) return;
 
         const userMessage: Message = {role: 'user', content: input};
@@ -44,7 +45,7 @@ const Aimain = (props: Props) => {
 
         try {
             const response = await axios.post(
-                'https://openrouter.ai/api/chat/completions',
+                'https://openrouter.ai/api/v1/chat/completions',
                 {
                     model: 'openai/gpt-3.5-turbo',
                     messages: newMessages,
@@ -53,18 +54,23 @@ const Aimain = (props: Props) => {
                     headers: {
                         'Authorization': `Bearer ${apiKey}`,
                         'Content-Type': 'application/json',
-                        'HTTP-Referer': 'https://tolkify.com/',
+                        'HTTP-Referer': 'https://tolkify.com',
                     },
                 }
             );
 
-            const reply = response.data.choices[0].message;
-            setMessages([...newMessages, reply]);
+
+            if (response.data?.choices?.[0]?.message) {
+                const reply = response.data.choices[0].message;
+                setMessages([...newMessages, reply]);
+            } else {
+                throw new Error('Unexpected API response structure');
+            }
         } catch (error) {
             console.error('API Error:', error);
             setMessages([...newMessages, {
                 role: 'assistant',
-                content: 'Sorry, I encountered an error. Please try again.'
+                content: 'Sorry, I encountered an error processing your request. Please try again.'
             }]);
         } finally {
             setIsLoading(false);

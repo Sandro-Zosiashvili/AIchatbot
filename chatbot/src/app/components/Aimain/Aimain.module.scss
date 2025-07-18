@@ -181,15 +181,10 @@
 
 .chat {
     overflow-y: auto;
+}
 
-    &::-webkit-scrollbar {
-        width: 2px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #666;
-        border-radius: 1px;
-    }
+.chat::-webkit-scrollbar {
+    display:  none;
 }
 
 .userMessage {
